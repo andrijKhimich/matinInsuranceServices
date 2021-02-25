@@ -1,1 +1,69 @@
 // header styles
+
+.header {
+  &-row {
+    padding: 28px 0 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-title {
+    text-align: center;
+
+    @include d(767) {
+      display: none;
+    }
+
+    p {
+      color: $blue;
+      font-weight: bold;
+    }
+  }
+
+  &-rating {
+    display: flex;
+
+    p {
+      color: $gray;
+      font-weight: normal;
+    }
+
+    b,
+    strong {
+      color: $black;
+    }
+  }
+
+  &-contact {
+    font-weight: bold;
+    text-align: center;
+
+    p {
+      color: $grayLight;
+      margin-bottom: 10px;
+    }
+
+    a {
+      text-transform: uppercase;
+      color: $blue;
+      font-size: 24px;
+    }
+  }
+}
+
+.logo {
+  max-width: 106px;
+}
+
+.rating-list {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+
+  li {
+    width: 10px;
+    height: 10px;
+    margin-right: 6px;
+  }
+}
