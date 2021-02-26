@@ -13,7 +13,7 @@ function initTestimonialsSlider() {
   });
 
   $(testimonialsSlider).slick({
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
     dots: false,
     infinite: false,
@@ -25,6 +25,12 @@ function initTestimonialsSlider() {
       breakpoint: 991,
       settings: {
         adaptiveHeight: true
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+           slidesToShow: 1
       }
     }]
   });
